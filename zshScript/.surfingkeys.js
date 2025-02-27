@@ -69,7 +69,10 @@ api.mapkey("so", "scribble l1b10", function () {
   );
 });
 api.mapkey("ad", "Dotfiles", function () {
-  window.open("https://github.com/mdshahjalal5/allDotfilesBackup", "_blank");
+  window.open(
+    "https://github.com/mdshahjalal5/allDotfilesBackupEndeavourOs",
+    "_blank",
+  );
 });
 //
 //
