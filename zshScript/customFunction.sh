@@ -278,7 +278,7 @@ git_push2() {
 
   echo "Changes pushed successfully from $target_dir."
 }
-alias bb="backup_dotfiles && git_push2"
+alias bb="backup_dotfiles && git_push2 /run/media/sj/developer/allDotfilesBackupEndeavourOs"
 
 
 
