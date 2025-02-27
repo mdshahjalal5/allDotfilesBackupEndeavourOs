@@ -63,3 +63,6 @@ export GTK_FILE_CHOOSER_SCRIPT=~/.local/bin/yazi-picker.sh
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+# make firefox default
+export BROWSER=firefox
+
