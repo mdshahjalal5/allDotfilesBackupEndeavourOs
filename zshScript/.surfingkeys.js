@@ -122,11 +122,8 @@ api.mapkey("sq", "Open Quran", function () {
 api.mapkey("sa", "email inbox opening", function () {
   window.open("https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox", "_blank");
 });
-api.mapkey("sn", "assignment L2B4Web", function () {
-  window.open(
-    "https://github.com/orgs/Porgramming-Hero-web-course/repositories",
-    "_blank",
-  );
+api.mapkey("sn", "PH b11 github repositories", function () {
+  window.open("https://github.com/ProgrammingHero1?tab=repositories", "_blank");
 });
 //t: fbLevel1
 api.mapkey("s1", "fbLevel1", function () {

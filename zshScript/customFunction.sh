@@ -226,7 +226,7 @@ zle -N git_push_widget git_push
 backup_dotfiles() {
   # local backup_dir="/mnt/fed/allDotfilesBackup"
   local backup_dir="/run/media/sj/developer/allDotfilesBackupEndeavourOs"
-  mkdir -p "$backup_dir"
+   mkdir -p "$backup_dir"
 
   # cp -r ~/.config/i3 "$backup_dir/i3"
   cp -r ~/.tmux.conf "$backup_dir/tmux.conf"
