@@ -244,7 +244,7 @@ api.mapkey("sc", "Open ChatGPT chk", function () {
 
     let checkLoaded = setInterval(() => {
       try {
-        let p = newTab.document.querySelector("#prompt-textarea p");
+        let p = document.querySelector("#prompt-textarea p");
         if (p) {
           console.log("p tag found:", p);
           clearInterval(checkLoaded); // Stop checking once found
@@ -252,7 +252,7 @@ api.mapkey("sc", "Open ChatGPT chk", function () {
       } catch (err) {
         console.log("Waiting for new tab to load...");
       }
-    }, 1000); // Check every 1 second
+    }, 2000); // Check every 1 second
   } else {
     console.log("Failed to open new tab.");
   }
