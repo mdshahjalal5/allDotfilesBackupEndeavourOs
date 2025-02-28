@@ -232,6 +232,8 @@ api.mapkey("sr", "redux", function () {
 //t: open  chatgpt
 api.mapkey("sc", "Open chatgpt", function () {
   window.open("https://chatgpt.com/", "_blank");
+  let p = document.querySelector("#prompt-textarea  p");
+  console.log(`p tag `, p);
 });
 //
 //
