@@ -76,20 +76,9 @@ api.mapkey("ad", "Dotfiles", function () {
 });
 
 //w: checking DOM
-/* api.mapkey("am", "Checking Dom", () => {
-  document.getElementById("prompt-textarea").addEventListener("click", () => {
-    alert("clicked");
-  });
-}); */
-api.mapkey("am", "Checking DOM", () => {
-  let el = document.getElementById("prompt-textarea");
-  if (el) {
-    el.addEventListener("click", () => {
-      alert("clicked");
-    });
-  } else {
-    alert("Element not found!");
-  }
+api.mapkey("am", "Checking Dom", () => {
+  document.getElementById("prompt-textarea");
+  alert(`${new Date()}`);
 });
 //
 //
