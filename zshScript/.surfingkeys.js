@@ -75,11 +75,6 @@ api.mapkey("ad", "Dotfiles", function () {
   );
 });
 
-//w: checking DOM
-api.mapkey("am", "Checking Dom 2", () => {
-  let div = document.getElementById("prompt-textarea");
-  alert(`${new Date()} ${"chkking"}`);
-});
 //
 //
 //
@@ -252,6 +247,13 @@ api.mapkey("sc", "Open ChatGPT chk", function () {
 //t: open  claude ai
 api.mapkey("al", "Open claude ai", function () {
   window.open("https://claude.ai/new");
+});
+api.mapkey("am", "Chk claude", function () {
+  const domain = window.location.hostname.split(".").slice(-2).join(".");
+  console.log(domain); // Example: "example.com" (removes subdomains like "www")
+  if (domain == "claude.ai") {
+    window.location.href = "new";
+  }
 });
 //t: github repository page opening
 api.mapkey("gr", "Repository Github", function () {
