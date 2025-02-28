@@ -239,6 +239,7 @@ api.mapkey("sc", "Open ChatGPT chk", function () {
   let newTab = window.open("https://chatgpt.com/", "_blank"); // Open ChatGPT in a new tab
 
   if (newTab) {
+    console.log(newTab, ".surfingkeys.js", 242);
     alert("working");
 
     let checkLoaded = setInterval(() => {
