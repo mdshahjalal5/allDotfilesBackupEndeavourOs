@@ -56,7 +56,7 @@ api.mapkey(
     domain: /./, // Apply this mapping to all domains
   },
 );
-//w: opening perplexity ai
+//w: opening perplexity ai ai
 
 api.mapkey("ax", "perplexity ai", function () {
   if (window.location.hostname.includes("perplexity")) {
