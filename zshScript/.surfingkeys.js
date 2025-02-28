@@ -58,9 +58,6 @@ api.mapkey(
 );
 //w: opening perplexity ai
 
-/* api.mapkey("ax", "perplexity ai new chat", function () {
-  window.location.href = "https://www.perplexity.ai/";
-}); */
 api.mapkey("ax", "perplexity ai", function () {
   if (window.location.hostname.includes("perplexity")) {
     window.open("https://www.perplexity.ai/");
