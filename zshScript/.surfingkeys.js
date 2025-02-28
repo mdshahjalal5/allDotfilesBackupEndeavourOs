@@ -237,26 +237,10 @@ api.mapkey("sr", "redux", function () {
 }); */
 api.mapkey("sc", "Open ChatGPT chk", function () {
   let newTab = window.open("https://chatgpt.com/", "_blank"); // Open ChatGPT in a new tab
-
-  if (newTab) {
-    console.log(newTab, ".surfingkeys.js", 242);
-    alert("working");
-
-    let checkLoaded = setInterval(() => {
-      console.log(`hellow`);
-      try {
-        let p = document.querySelector("#prompt-textarea p");
-        if (p) {
-          console.log("p tag found:", p);
-          clearInterval(checkLoaded); // Stop checking once found
-        }
-      } catch (err) {
-        console.log("Waiting for new tab to load...");
-      }
-    }, 2000); // Check every 1 second
-  } else {
-    console.log("Failed to open new tab.");
-  }
+  console.log(newTab, ".surfingkeys.js", 240);
+  setInterval(() => {
+    console.log(`hellow`);
+  }, 2000);
 });
 
 //
