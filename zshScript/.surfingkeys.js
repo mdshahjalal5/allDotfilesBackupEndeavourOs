@@ -235,12 +235,13 @@ api.mapkey("sr", "redux", function () {
   let p = document.querySelector("#prompt-textarea  p");
   console.log(`p tag `, p);
 }); */
-api.mapkey("sc", "Open ChatGPT", function () {
+api.mapkey("sc", "Open ChatGPT chk", function () {
   let newTab = window.open("https://chatgpt.com/", "_blank"); // Open ChatGPT in a new tab
 
   if (newTab) {
+    alert("working");
+
     let checkLoaded = setInterval(() => {
-      alert("working");
       try {
         let p = newTab.document.querySelector("#prompt-textarea p");
         if (p) {
