@@ -62,7 +62,7 @@ api.mapkey("ax", "perplexity ai new chat", function () {
   window.location.href = "https://www.perplexity.ai/";
 });
 //t: discord opening
-api.mapkey("so", "scribble l1b10", function () {
+api.mapkey("so", "scribble l1b10", () => {
   window.open(
     "https://web.programming-hero.com/update-1/video/update-1-42-1-scribbles-cafe-project-overview-and-tailwind-setup",
     "_blank",
@@ -73,6 +73,23 @@ api.mapkey("ad", "Dotfiles", function () {
     "https://github.com/mdshahjalal5/allDotfilesBackupEndeavourOs",
     "_blank",
   );
+});
+
+//w: checking DOM
+/* api.mapkey("am", "Checking Dom", () => {
+  document.getElementById("prompt-textarea").addEventListener("click", () => {
+    alert("clicked");
+  });
+}); */
+api.mapkey("am", "Checking DOM", () => {
+  let el = document.getElementById("prompt-textarea");
+  if (el) {
+    el.addEventListener("click", () => {
+      alert("clicked");
+    });
+  } else {
+    alert("Element not found!");
+  }
 });
 //
 //
