@@ -230,11 +230,32 @@ api.mapkey("sr", "redux", function () {
   );
 });
 //t: open  chatgpt
-api.mapkey("sc", "Open chatgpt", function () {
+/* api.mapkey("sc", "Open chatgpt", function () {
   window.open("https://chatgpt.com/", "_blank");
   let p = document.querySelector("#prompt-textarea  p");
   console.log(`p tag `, p);
+}); */
+api.mapkey("sc", "Open ChatGPT", function () {
+  let newTab = window.open("https://chatgpt.com/", "_blank"); // Open ChatGPT in a new tab
+
+  if (newTab) {
+    let checkLoaded = setInterval(() => {
+      alert("working");
+      try {
+        let p = newTab.document.querySelector("#prompt-textarea p");
+        if (p) {
+          console.log("p tag found:", p);
+          clearInterval(checkLoaded); // Stop checking once found
+        }
+      } catch (err) {
+        console.log("Waiting for new tab to load...");
+      }
+    }, 1000); // Check every 1 second
+  } else {
+    console.log("Failed to open new tab.");
+  }
 });
+
 //
 //
 //
