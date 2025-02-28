@@ -46,4 +46,6 @@ alias yy='yay'
 
 alias a="npm install gh-pages --save-dev   &&  npx gh-pages -d .  && gh repo view --web"
 alias h="nvim ~/.config/hypr/hyprland.conf"
+alias s="nvim /run/media/sj/developer/zshScript/.surfingkeys.js"
+
 

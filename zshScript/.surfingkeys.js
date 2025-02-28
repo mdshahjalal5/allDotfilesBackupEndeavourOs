@@ -8,6 +8,7 @@ api.mapkey("<ctrl-y>", "Show me the money", function () {
 api.map("gt", "t");
 api.map("w", "d");
 api.map("t", "T");
+api.map("C-1", "g0");
 api.map("ss", "on");
 api.map("aa", "S");
 api.map("<Alt-j>", "l");
