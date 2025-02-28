@@ -78,7 +78,7 @@ api.mapkey("ad", "Dotfiles", function () {
 //w: checking DOM
 api.mapkey("am", "Checking Dom 2", () => {
   let div = document.getElementById("prompt-textarea");
-  alert(`${new Date()} ${div}`);
+  alert(`${new Date()} ${"chkking"}`);
 });
 //
 //
