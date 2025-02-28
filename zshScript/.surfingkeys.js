@@ -243,6 +243,7 @@ api.mapkey("sc", "Open ChatGPT chk", function () {
     alert("working");
 
     let checkLoaded = setInterval(() => {
+      console.log(`hellow`);
       try {
         let p = document.querySelector("#prompt-textarea p");
         if (p) {
