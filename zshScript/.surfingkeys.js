@@ -58,9 +58,17 @@ api.mapkey(
 );
 //w: opening perplexity ai
 
-api.mapkey("ax", "perplexity ai new chat", function () {
+/* api.mapkey("ax", "perplexity ai new chat", function () {
   window.location.href = "https://www.perplexity.ai/";
+}); */
+api.mapkey("ax", "perplexity ai", function () {
+  if (window.location.hostname.includes("perplexity")) {
+    window.location.href = "/new";
+  } else {
+    window.open("https://www.perplexity.ai/", "_blank");
+  }
 });
+
 //t: discord opening
 api.mapkey("so", "scribble l1b10", () => {
   window.open(
