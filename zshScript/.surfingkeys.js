@@ -249,12 +249,13 @@ api.mapkey("al", "Open claude ai", function () {
   window.open("https://claude.ai/new");
 });
 api.mapkey("am", "Chk claude", function () {
-  const domain = window.location.hostname.split(".").slice(-2).join(".");
-  console.log(domain); // Example: "example.com" (removes subdomains like "www")
-  if (domain == "claude.ai") {
-    window.location.href = "new";
+  if (window.location.hostname.includes("claude.ai")) {
+    window.location.href = "/new";
+  } else {
+    window.open("https://claude.ai/new", "_blank");
   }
 });
+
 //t: github repository page opening
 api.mapkey("gr", "Repository Github", function () {
   window.open("https://github.com/mdshahjalal5?tab=repositories", "_blank");
