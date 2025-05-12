@@ -113,8 +113,8 @@ api.mapkey("ay", "youtube opening", function () {
 //
 //
 //
-api.mapkey("at", "kbi tutorial", function () {
-  window.open("https://github.com/mdshahjalal5/kbi-tutorial", "_blank");
+api.mapkey("at", "tailwind css v4 installation", function () {
+  window.open("https://tailwindcss.com/docs/installation/using-vite", "_blank");
 });
 //
 //
