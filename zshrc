@@ -12,7 +12,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"  # Or any other theme of your choice
  source /run/media/sj/developer/zshScript/enviromentVariable.sh
 # source /mnt/fed/secret.sh
 plugins=(git
-	# zsh-syntax-highlighting 
+	 zsh-syntax-highlighting 
   zsh-autosuggestions
   # zsh-syntax-highlighting 
 	#zsh-z
@@ -20,6 +20,7 @@ plugins=(git
 	sudo
    globalias
     zsh-completions
+    fzf-tab
 
   # zsh-vi-mode
   # copybuffer 

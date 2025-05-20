@@ -44,9 +44,14 @@ vim.api.nvim_set_keymap("n", "<Space>bk", ":set lines=80<CR>", { noremap = true,
 vim.api.nvim_set_keymap("i", "<Space>bk", ":set lines=100<CR>", { noremap = true, silent = true })
 
 --w: open the current file in browser
-vim.api.nvim_set_keymap("n", "<space>ss", [[:!xdg-open %<CR>]], { noremap = true, silent = true })
---w: open the current file in browser
-vim.api.nvim_set_keymap("i", "<space>ss", [[<Esc>:!xdg-open %<CR>]], { noremap = true, silent = true })
+vim.keymap.set({ "n", "i" }, "<space>sa", function()
+	local file = vim.fn.expand("%:p")
+	if file == "" then
+		vim.notify("No file to open (maybe it's unsaved?)", vim.log.levels.ERROR)
+		return
+	end
+	vim.fn.jobstart({ "xdg-open", file }, { detach = true })
+end, { noremap = true, silent = true })
 
 --
 --

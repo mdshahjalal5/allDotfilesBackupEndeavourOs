@@ -55,6 +55,7 @@ alias s="nvim /run/media/sj/developer/zshScript/.surfingkeys.js"
 alias m="sudo systemctl start mongodb"
 alias aa="nvim /run/media/sj/developer/zshScript/alias.sh"
 alias bd="bun dev"
+alias ba="bun add"
 
 
 
