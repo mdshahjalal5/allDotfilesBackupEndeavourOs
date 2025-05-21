@@ -79,8 +79,8 @@ api.mapkey("so", "scribble l1b10", () => {
 //
 //
 //t:  open leonardo ai
-api.mapkey("ah", "Leonardo ai", function () {
-  window.open("https://app.leonardo.ai/image-generation", "_blank");
+api.mapkey("ah", "Deep ai", function () {
+  window.open("https://deepai.org/dashboard/images", "_blank");
 });
 //
 //
